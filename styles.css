@@ -141,11 +141,11 @@ section {
 
 /* --- Hover State (The "Pop") --- */
 .btn-linkedin:hover {
-  background-color: rgba(0, 119, 181, 0.1); /* Subtle Blue Tint Background */
-  border-color: #0077b5; /* LinkedIn Official Blue Border */
-  color: #ffffff; /* Text turns pure white */
-  box-shadow: 0 0 15px rgba(0, 119, 181, 0.4); /* Blue Neon Glow */
-  transform: translateY(-2px); /* Slight lift */
+  background-color: rgba(0, 119, 181, 0.1);
+  border-color: #0077b5; 
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 119, 181, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Tech Pill / Hashtag Style */
@@ -153,15 +153,14 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.25rem 0.75rem; /* px-3 py-1 */
-  font-size: 0.875rem;      /* text-sm */
-  font-weight: 500;         /* font-medium */
-  border-radius: 9999px;    /* rounded-full */
-  
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500; 
+  border-radius: 9999px; 
   /* The "Signal vs Noise" Look */
-  background-color: rgba(30, 41, 59, 0.5); /* Slate-800 at 50% opacity */
-  border: 1px solid rgba(168, 85, 247, 0.7); /* Purple-500 at 30% opacity */
-  color: #cbd5e1; /* Slate-300 (Off-white) */
+  background-color: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(168, 85, 247, 0.7); 
+  color: #cbd5e1; 
   
   /* Smooth Animation */
   transition: all 0.3s ease;
@@ -170,11 +169,11 @@ section {
 
 /* Hover State */
 .tech-pill:hover {
-  background-color: #1e293b; /* Solid Slate-800 */
-  border-color: #c084fc;     /* Purple-400 (Brighter) */
-  color: #ffffff;            /* Pure White */
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25); /* Subtle Neon Glow */
-  transform: translateY(-1px); /* Slight lift */
+  background-color: #1e293b;
+  border-color: #c084fc;    
+  color: #ffffff;            
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+  transform: translateY(-1px); 
 }
 .min-m-screen{
     min-height: 50vh;
@@ -187,7 +186,6 @@ section {
 }
 
 /* --- Base Icon Style --- */
-/* --- Base Icon Style (Updated) --- */
 .card-icon {
   display: block;
   width: 25px; 
@@ -219,9 +217,9 @@ section {
 /* --- Base Lab Icon Style --- */
 .lab-icon {
   display: block;
-  width: 32px;  /* Size matches your other icons */
+  width: 32px; 
   height: 32px;
-  margin-left: auto;  /* Centers the icon */
+  margin-left: auto; 
   margin-right: auto;
   margin-bottom: 1rem;
   background-repeat: no-repeat;
@@ -242,6 +240,7 @@ section {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2334D399' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='14' x='2' y='5' rx='2'/%3E%3Cline x1='2' x2='22' y1='10' y2='10'/%3E%3Cpath d='M12 15h.01'/%3E%3C/svg%3E");
 }
 
+/* LAB*/
 .lab-link {
   position: absolute;
   top: 1rem;
@@ -285,6 +284,41 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.status-badge {
+  display: flex;
+  width: fit-content;
+  margin: 1rem auto 0 auto;
+
+  align-items: center;
+  gap: 0.35rem;
+ justify-content: center;
+  
+ padding: 0.25rem 0.75rem; 
+ font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  cursor: default;
+  
+  /* Amber / Warning Theme */
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.1);
+  background-color: rgba(251, 191, 36, 0.1);
+}
+
+/* Optional: Clock Icon inside the badge */
+.status-badge::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fbbf24' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 /* home Arrow*/
 .container {
