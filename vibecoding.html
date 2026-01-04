@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding | The PM's Superpower</title>
+     
+   <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/tailwind-config.js"></script>
+
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <!-- Logo / Brand -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-slate-900 text-white p-1.5 rounded-lg group-hover:bg-indigo-600 transition-colors duration-300">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <span class="font-bold text-lg tracking-tight text-slate-800">Origin</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500">
+                <a href="thelab.html" class="hover:text-slate-900 transition-colors">The Lab</a>
+                <a href="#" class="hover:text-slate-900 transition-colors">About</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button aria-label="mobile menu" id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md absolute w-full left-0 top-16 shadow-lg">
+            <div class="flex flex-col p-6 space-y-6">
+                <a href="thelab.html" class="mobile-link text-base font-medium text-slate-600 hover:text-slate-900 transition-colors">The Lab</a>
+                <a href="#" class="mobile-link text-base font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="pt-32 pb-10 px-6">
+        <div class="max-w-5xl mx-auto">
+
+            <header class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider">Technical Strategy</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
+                    Vibe Coding<br>
+                    <span class="text-indigo-600">The PM’s New Superpower.</span>
+                </h1>
+                <p class="text-xl text-slate-500 leading-relaxed">
+                   <span class="font-bold">Stop Requesting Tools. Start Building Them.</span>
+                   <br/> Why the modern Product Manager’s highest-leverage skill is <strong>Vibe Coding</strong>: Using AI to bridge the gap between "I have an idea" and "It works."
+                </p>
+            </header>
+
+            <div class="w-full h-64 bg-slate-900 rounded-2xl border border-slate-800 flex items-center justify-center mb-16 overflow-hidden shadow-xl relative group">
+                <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 24px 24px;"></div>
+                
+                <div class="relative w-full max-w-2xl px-4 flex items-center justify-between z-10 ">
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-lg text-slate-400">
+                            <i data-lucide="lightbulb" class="w-8 h-8"></i>
+                        </div>
+                        <span class="text-slate-400 font-mono text-xs tracking-widest uppercase">The Need</span>
+                    </div>
+
+                    <div class="flex-1 mx-6 relative h-2">
+                        <div class="absolute inset-0 bg-gradient-to-r from-slate-700 via-indigo-500 to-emerald-500 rounded-full h-1 mt-0.5"></div>
+                        <div class="absolute -top-12 left-1/4 bg-slate-800/90 p-2 rounded border border-slate-700 text-[10px] font-mono text-indigo-300 shadow-lg transform -rotate-6">
+                            import pandas as pd
+                        </div>
+                        <div class="absolute top-8 right-1/4 bg-slate-800/90 p-2 rounded border border-slate-700 text-[10px] font-mono text-emerald-300 shadow-lg transform rotate-3">
+                            fetch(api_url)
+                        </div>
+                        <div class="absolute -bottom-8 w-full text-center">
+                            <span class="text-indigo-400 font-bold text-xs uppercase tracking-widest bg-slate-900/50 px-2 py-1 rounded">Vibe Coding</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="bg-emerald-900/30 p-4 rounded-xl border border-emerald-500/30 shadow-[0_0_15px_rgba(16,185,129,0.2)] text-emerald-400">
+                            <i data-lucide="play-circle" class="w-8 h-8"></i>
+                        </div>
+                        <span class="text-emerald-500 font-mono text-xs tracking-widest uppercase">The Solution</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="alert-triangle" class="w-6 h-6 text-indigo-600"></i> The "Why"
+                </h2>
+                <div class="prose prose-slate max-w-none text-slate-600 leading-7">
+                    <p class="mb-4">
+                        There is an eternal struggle in product management: The gap between the speed of thought and the speed of execution. You have a hypothesis, but Engineering is swamped with mission-critical infrastructure work.
+                    </p>
+                    <p class="mb-6">
+                        Your "small tooling request" gets backlog-prioritized to Q3 of next year. You are blocked.
+                    </p>
+                    
+                    <div class="p-6 md:p-8 bg-white rounded-2xl shadow-sm border border-slate-200 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
+                        <i data-lucide="quote" class="w-8 h-8 text-indigo-100 absolute top-4 right-4"></i>
+                        <p class="text-lg font-medium text-slate-800 italic relative z-10">
+                            "Vibe coding isn't about replacing engineers. It's about respecting their time by handling the low-stakes tooling yourself."
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="zap" class="w-6 h-6 text-indigo-600"></i> The "What"
+                </h2>
+                <div class="prose prose-slate max-w-none text-slate-600 leading-7">
+                    <p class="mb-6">
+                        <strong>Vibe Coding</strong> is the art of using LLMs (Claude, GPT-4o) to translate your product intent—the "vibe"—into functional, throwaway code. It collapses the distance between defining a problem and validating a solution.
+                    </p>
+                    <div class="grid sm:grid-cols-1 gap-4">
+                        <div class="graphic-container">
+                            <div class="bridge-viz">
+                                <div class="cliff bg-slate-700">
+                                    <div class="cliff-label text-slate-600">Idea</div>
+                                </div>
+                                <div class="bridge-span"></div>
+                                <div class="cliff bg-slate-700">
+                                    <div class="cliff-label text-slate-600">Product</div>
+                                </div>
+                            </div>
+                            <div class="graphic-caption text-slate-800">Figure 1: Collapsing the execution gap with AI.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16 bg-slate-100 rounded-3xl p-8 md:p-12 border border-slate-200/60">
+                <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                    <div class="bg-white p-2 rounded-lg shadow-sm">
+                        <i data-lucide="refresh-cw" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    The Iteration Loop
+                </h2>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-5 items-start">
+                        <div class="w-12 h-12 rounded-2xl bg-white shadow-sm border border-slate-100 flex-shrink-0 flex items-center justify-center text-blue-600 font-bold text-lg">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">The Vibe (The Prompt)</h3>
+                            <p class="text-slate-600 mt-2 text-lg leading-relaxed">
+                                Explain what you want in plain English. Be specific about inputs and outputs.
+                                <br><span class="font-mono text-sm bg-slate-200 px-2 py-1 rounded text-slate-600 mt-2 inline-block">"I need a script that takes CSV X and filters for Y..."</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 items-start">
+                        <div class="w-12 h-12 rounded-2xl bg-white shadow-sm border border-slate-100 flex-shrink-0 flex items-center justify-center text-purple-600 font-bold text-lg">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">The Generation</h3>
+                            <p class="text-slate-600 mt-2 text-lg leading-relaxed">
+                                The AI gives you code (Python, JS, HTML). You copy it. You don't judge it yet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 items-start">
+                        <div class="w-12 h-12 rounded-2xl bg-white shadow-sm border border-slate-100 flex-shrink-0 flex items-center justify-center text-emerald-600 font-bold text-lg">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Execute & Fail Fast</h3>
+                            <p class="text-slate-600 mt-2 text-lg leading-relaxed">
+                                Run it locally. It will likely break. <strong>This is the most important step.</strong> Paste the error message back into the AI. It fixes it. Repeat until you have a working tool.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 ways to use it   -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <i data-lucide="layers" class="w-6 h-6 text-indigo-600"></i> 3 Ways to Use It Today
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center mb-4 group-hover:bg-indigo-100 transition-colors">
+                            <i data-lucide="database" class="w-5 h-5 text-indigo-600"></i>
+                        </div>
+                        <div class="font-bold text-slate-900 mb-2 use-case-title">The "Messy Data" Validator<span class="tag">Analysis</span></div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Don't wait for BI. Use Pandas to prove your retention hypothesis.</p>
+                        <div class="bg-slate-900 p-3 rounded text-xs font-mono text-indigo-200 code-block">
+                            <span class="code-label">PROMPT</span>
+                            "Filter data.csv for users who completed step 3 and check status."
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
+                            <i data-lucide="workflow" class="w-5 h-5 text-blue-600"></i>
+                        </div>
+                        <div class="font-bold text-slate-900 mb-2 use-case-title">The Workflow Automator<span class="tag">Automation</span></div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Stop manually updating Sheets. Script the Jira API glue work.</p>
+                        <div class="bg-slate-900 p-3 rounded text-xs font-mono text-blue-200 code-block">
+                            <span class="code-label">PROMPT</span>
+                            "Fetch tickets in 'Project X' and update this Google Sheet row."
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-10 h-10 rounded-full bg-purple-50 flex items-center justify-center mb-4 group-hover:bg-purple-100 transition-colors">
+                            <i data-lucide="layout" class="w-5 h-5 text-purple-600"></i>
+                        </div>
+                        <div class="font-bold text-slate-900 mb-2 use-case-title">The "Napkin" UI Prototype<span class="tag">Design</span></div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Words fail. Generate an HTML file to visualize the dashboard widget.</p>
+                        <div class="bg-slate-900 p-3 rounded text-xs font-mono text-purple-200 code-block">
+                            <span class="code-label">PROMPT</span>
+                            "Create a modern HTML card with a 'Velocity' chart and up-arrow."
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center mb-4 group-hover:bg-red-100 transition-colors">
+                            <i data-lucide="shield-alert" class="w-5 h-5 text-red-600"></i>
+                        </div>
+                        <div class="font-bold text-slate-900 mb-2">Strategic Guardrails</div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <strong>1. Never Production:</strong> This is for prototyping only.<br>
+                            <strong>2. Data Privacy:</strong> Never paste sensitive customer data into public LLMs.<br>
+                            <strong>3. Security:</strong> Ask AI how to use environment variables.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="mb-12 border-t border-slate-200 pt-6">
+                <div class="flex gap-2 text-slate-500">
+                    <i data-lucide="info" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                    <p class="text-xs leading-relaxed">
+                        <strong>Note:</strong> Vibe coding is a methodology for empowerment, not a replacement for professional software engineering practices. Always consult your engineering lead before deploying any automation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-8 px-4 bg-gray-800 text-center text-gray-400">
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center max-w-4xl mx-auto">
+            <p>© 2025 Nexus Strategy. All rights reserved.</p>
+            <a href="#" class="flex items-center justify-center gap-2 hover:text-white transition-colors">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                <span>Connect on LinkedIn</span>
+            </a>        
+         </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

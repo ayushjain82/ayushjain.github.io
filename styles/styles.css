@@ -396,3 +396,156 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  }
 }
 /* home Arrow ends*/
+
+ /* Custom utilities for the CSS graphics */
+ :root {
+            --bg-color: #f8fafc;
+            --card-bg: #eff3f7;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #2265c1;
+            --accent-glow: rgba(47, 129, 247, 0.15);
+            --border: #cdd2d6;
+            --success: #2ea043;
+            --gradient-start: #238636;
+            --gradient-end: #2f81f7;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+.code-syntax {
+    color: #e2e8f0;
+}
+.code-key { color: #f472b6; } /* Pink */
+.code-str { color: #a5b4fc; } /* Indigo */
+.code-cmd { color: #34d399; } /* Emerald */
+/* Custom Graphics - CSS Only */
+.graphic-container {
+    background-color: rgb(226 232 240 / 0.6);
+    border: 1px solid var(--border);
+    border-color: rgb(226 232 240 / 0.6);
+    border-radius: 12px;
+    padding: 40px 30px 20px;
+    margin: 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.graphic-caption {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 15px;
+    font-family: var(--font-mono);
+}
+
+/* Graphic 1: The Bridge */
+.bridge-viz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.cliff {
+    width: 80px;
+    height: 12px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.cliff::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--border), transparent);
+    opacity: 0.4;
+}
+
+.cliff-label {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+.bridge-span {
+    flex-grow: 1;
+    height: 4px;
+    background: linear-gradient(90deg, var(--border) 0%, var(--accent) 50%, var(--success) 100%);
+    margin: 0 10px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.bridge-span::before {
+    content: 'VIBE CODING';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0 8px;
+}
+/* Code Block Styling */
+  .code-block {
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 25px 20px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-secondary);
+      position: relative;
+  }
+  
+  .code-label {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background: var(--accent);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: bold;
+  }
+/*use it*/
+.use-case-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+.tag {
+    background: rgba(47, 129, 247, 0.1);
+    color: var(--accent);
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
