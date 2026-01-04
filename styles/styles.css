@@ -257,7 +257,7 @@ section {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem; /* text-xs */
   font-weight: 500;
-  color: #fffff; /* Slate-400 */
+  color: #ffffFf; /* Slate-400 */
   border-radius: 0.375rem; /* rounded-md */
   text-decoration: none;
   transition: all 0.2s ease;
