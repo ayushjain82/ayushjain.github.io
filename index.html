@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Jain - Strategic Program & Product Leader</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/20 backdrop-blur-md border-b border-slate-600">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <!-- Logo / Brand -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-slate-900 text-white p-1.5 rounded-lg group-hover:bg-indigo-600 transition-colors duration-300">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <span class="font-bold text-lg tracking-tight text-slate-200">Origin</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-100">
+                <a href="thelab.html" class="hover:text-gray-400 transition-colors">The Lab</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button aria-label="mobile menu" id="mobile-menu-btn" class="md:hidden text-slate-500 hover:text-slate-900 p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-md absolute w-full left-0 top-16 shadow-lg">
+            <div class="flex flex-col p-6 space-y-6">
+                <a href="thelab.html" class="mobile-link text-base font-medium text-slate-600 hover:text-slate-900 transition-colors">The Lab</a>
+            </div>
+        </div>
+    </nav>
     <!-- Hero Section -->
     <section class="min-m-screen flex items-center justify-center px-4">
         <div class="text-center">
@@ -87,7 +119,7 @@
                     </div>
                 </a>
                <!-- Project 3: -->
-                <a target="_blank" class="project-card block">
+                <a href="vibecoding.html" class="project-card block">
                     <div class="project-type-badge lab-link link-blog">Blog</div>
                     <div class="text-5xl mb-4 text-center lab-icon icon-vibe"></div>
                     <h3 class="text-xl font-bold mb-3 text-center">Vibe Coding: The PM's Superpower</h3>
@@ -97,11 +129,10 @@
                         <span class="project-tag">#Leadership</span>
                         <span class="project-tag">#AI</span>
                     </div>
-                    <p class="status-badge">Coming Soon</p>
                 </a>
             </div>
              <div class="text-center mt-12">
-                <a href="thelab.html" target="_blank" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-bold transition-colors inline-flex items-center gap-2">
+                <a href="thelab.html" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-bold transition-colors inline-flex items-center gap-2">
                 <span>Read More</span>
                 </a>
                 </div>
