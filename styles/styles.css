@@ -16,7 +16,11 @@ html { scroll-behavior: smooth; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-
+@keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-50%); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(300%) translateY(-50%); opacity: 0; }
+        }
 /* Tag Styling */
 .tag {
     display: inline-block;
@@ -547,4 +551,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding: 2px 6px;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+/*checklist print*/
+.audit-checkbox:checked + div {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+.audit-checkbox:checked + div svg {
+    display: block;
+}
+.audit-checkbox:checked ~ .audit-content {
+    opacity: 0.5;
+}
+.audit-checkbox:checked ~ .audit-content h3 {
+    text-decoration: line-through;
+    color: #4338ca;
 }
